@@ -11,8 +11,14 @@ btn.addEventListener("click", function (e) {
     dangerText.style.opacity = "1";
     dangerButton.style.opacity = "1";
     setTimeout(() => {
-      dangerText.style.removeProperty("opacity");
-      dangerButton.style.removeProperty("opacity");
+      // dangerText.style.removeProperty("opacity");
+      // dangerButton.style.removeProperty("opacity");
+
+      // sau
+
+      dangerText.style.opacity = "0";
+      dangerButton.style.opacity = "0";
+      inputEmail.value = "";
     }, 2000);
   }
 });
